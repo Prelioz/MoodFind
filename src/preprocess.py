@@ -6,8 +6,11 @@ from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 
 stop_words = set(stopwords.words('english'))
+stop_words.discard("not")
+stop_words.discard("no")
+stop_words.discard("nor")
 
-def preprocess(review):
+def preprocess_text(review):
 
     review = review.lower()
 
@@ -29,7 +32,7 @@ def preprocess(review):
     return review
 
 
-print(preprocess("This movie was AMAZING!!! <br /> I loved it."))
+
 
 
   
