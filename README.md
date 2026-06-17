@@ -10,6 +10,12 @@ The application analyzes movie reviews and predicts whether the sentiment is:
 
 ---
 
+## Application Preview
+
+![MoodFind Demo](assets/moodfind_demo.png)
+
+---
+
 ## 🚀 Features
 
 - Text preprocessing pipeline
